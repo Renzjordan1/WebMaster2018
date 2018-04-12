@@ -1,0 +1,1344 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="utf-8">
+  {% load staticfiles %}
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+
+  <title> CONTACT </title>
+</head>
+<style>
+  * {
+    padding: 0;
+    margin: 0;
+  }
+
+  /* Responsive with Width */
+
+  /* Phone Screens */
+
+  @media screen and (min-width:0px) {
+    .caption {
+      font-size: .5em;
+    }
+    #main {
+      font-size: 1.6em;
+      height: 450px;
+      margin-top: 64px;
+    }
+    .info {
+      height: 275px;
+      font-size: .7em;
+    }
+    #navbar .big {
+      display: none;
+    }
+    #navbar div {
+      height: 64px;
+    }
+    #menuToggle {
+      display: block;
+    }
+    #navbar .logoText {
+      font-size: 0em;
+    }
+    #navbar .pc {
+      display: none;
+    }
+    #miniNav {
+      grid-template-columns: 16.66666666% 33.3333333% 33.33333333% 16.6666666666%;
+    }
+    #miniNav div {
+      height: 43px;
+      padding-bottom: 21px;
+    }
+    .four {
+      height: 275px;
+      font: .66em;
+    }
+    .p {
+      padding-top: 6.4px;
+    }
+    .law1 {
+      font-size: .5em;
+    }
+    .learn {
+      height: 52px;
+    }
+    body {
+      width: 320px;
+    }
+    #law {
+      height: 43px;
+      font-size: .55em;
+    }
+    #footer,
+    #footer div {
+      height: 20px;
+      line-height: 20px;
+      font-size: .5em
+    }
+    #faq2{
+      grid-template-rows: 50% 50%;
+    }
+    .an{
+    border-bottom: 1px solid
+
+}
+  #faq2{
+    font-size: .8em
+  }
+
+
+
+
+  }
+
+  @media screen and (min-width:320px) {
+    body {
+      width: 100%;
+    }
+  }
+
+  @media screen and (min-width:420px) {
+    .info,
+    .four {
+      font-size: .77em;
+    }
+
+    .law1 {
+      font-size: .6em;
+    }
+    #law {
+      font-size: .63em
+    }
+  }
+
+  /* Very Small PC */
+
+  @media screen and (min-width: 620px) {
+    #navbar .pc {
+      font-size: .5em;
+      display: flex;
+    }
+        #navbar .big {
+      display: block;
+    }
+    #navbar .logoText {
+      font-size: .5em;
+    }
+    #menuToggle {
+      display: none;
+    }
+    #main {
+      font-size: 2.25em;
+      height: 550px;
+      margin-top: 70px;
+    }
+    #navbar a {
+      height: 70px;
+    }
+    #navbar div {
+      height: 70px;
+    }
+    #miniNav div {
+      height: 47px;
+      padding-bottom: 23px;
+    }
+    .four {
+      height: 300px;
+    }
+    .info {
+      height: 300px;
+    }
+    .p {
+      padding-top: 7px;
+    }
+    .learn {
+      height: 56px;
+    }
+    #law {
+      height: 47px;
+      font-size: .73em
+    }
+    #footer,
+    #footer div {
+      height: 30px;
+      line-height: 30px;
+      font-size: .55em
+    }
+  }
+
+  /*Very Small-Small PC */
+
+  @media screen and (min-width: 650px) {
+    #navbar .pc {
+      font-size: .55em;
+      display: flex;
+    }
+    #navbar .logoText {
+      font-size: .55em;
+    }
+    #navbar a {
+      height: 74px;
+    }
+    #navbar div {
+      height: 74px;
+    }
+    #miniNav div {
+      height: 49px;
+      padding-bottom: 25px;
+    }
+    .p {
+      padding-top: 7.4px;
+    }
+    .learn {
+      height: 59px;
+    }
+    #law {
+      height: 49px;
+    }
+
+  }
+
+  /* Small-Medium PC */
+
+  @media screen and (min-width: 700px) {
+    #navbar .pc {
+      font-size: .65em;
+    }
+
+    #navbar .logoText {
+      font-size: .65em;
+    }
+    #main {
+      font-size: 3em;
+      height: 700px;
+      margin-top: 78px;
+    }
+
+    .info {
+      font-size: 1.2em;
+      height: 400px;
+    }
+    #navbar a {
+      height: 78px;
+    }
+    #navbar div {
+      height: 78px;
+    }
+    #miniNav div {
+      height: 51px;
+      padding-bottom: 25px;
+    }
+    #law {
+      height: 51px;
+      font-size: .8em;
+    }
+    #faq2{
+      grid-template-columns: 50% 50%;
+      grid-template-rows: 100%;
+    }
+
+    #miniNav {
+      grid-template-columns: 38% 12% 12% 38%;
+
+    }
+    .caption {
+      font-size: .75em;
+    }
+    .four {
+      height: 400px;
+      font-size: 1.2em;
+    }
+    .law1 {
+      font-size: .63em;
+    }
+    .p {
+      padding-top: 7.8px;
+    }
+    .learn {
+      height: 62px;
+    }
+    .an{
+    border-bottom: 0px solid
+
+}
+    #faq2{
+      font-size: 1em
+    }
+    form{
+      font-size: 1em;
+    }
+
+  }
+
+  /* Medium PC */
+
+  @media screen and (min-width: 865px) {
+    #navbar .pc {
+      font-size: .8em;
+    }
+    .caption {
+      font-size: .8em;
+    }
+    #navbar .logoText {
+      font-size: .8em;
+    }
+    #main {
+      font-size: 3.8em;
+      height: 775px;
+      margin-top: 82px;
+    }
+    .info {
+      font-size: 1.45em;
+      height: 425px;
+    }
+    .law1 {
+      font-size: .7em;
+    }
+    #navbar a {
+      height: 82px;
+    }
+    #navbar div {
+      height: 82px;
+    }
+    #miniNav div {
+      height: 53px;
+      padding-bottom: 27px;
+    }
+    .four {
+      height: 425px;
+      font-size: 1.45em;
+    }
+    .p {
+      padding-top: 8.2px;
+    }
+    .learn {
+      height: 65px;
+    }
+    #law {
+      height: 53px;
+      font-size: .87em;
+    }
+    #footer,
+    #footer div {
+      height: 40px;
+      line-height: 40px;
+      font-size: .6em
+    }
+
+    #faq2{
+      font-size: 1.2em
+    }
+
+
+  }
+
+  /* Large PC */
+
+  @media screen and (min-width: 1025px) {
+    #navbar .pc {
+      font-size: 1em;
+    }
+    .caption {
+      font-size: .82em;
+    }
+    #navbar .logoText {
+      font-size: 1em;
+    }
+    #main {
+      background-attachment: fixed;
+      font-size: 4.5em;
+      height: 850px;
+      margin-top: 88px;
+    }
+    .info {
+      font-size: 1.5em;
+      height: 460px;
+    }
+    .law1 {
+      font-size: .74em;
+    }
+    #navbar a {
+      height: 88px;
+    }
+    #navbar div {
+      height: 88px;
+    }
+    #miniNav div {
+      height: 58px;
+      padding-bottom: 30px;
+    }
+    #law {
+      height: 58px;
+      font-size: .924em;
+    }
+    .four {
+      height: 460px;
+      font-size: 1.5em;
+    }
+    .p {
+      padding-top: 8.8px;
+    }
+    .learn {
+      height: 70px;
+    }
+    #footer,
+    #footer div {
+      height: 50px;
+      line-height: 50px;
+      font-size: .7em
+    }
+        #faq2{
+      font-size: 1.2em
+    }
+
+  }
+
+  /* large-hd */
+
+  @media screen and (min-width: 1366px) {
+    .caption {
+      font-size: .85em;
+    }
+    #navbar {
+      font-size: 1.07em;
+    }
+    #main {
+      font-size: 4.7em;
+      height: 1000px;
+      margin-top: 96px;
+    }
+    .info {
+      font-size: 1.6em;
+      height: 525px;
+    }
+    #navbar a {
+      height: 96px;
+    }
+    #navbar div {
+      height: 96px;
+    }
+    #miniNav div {
+      height: 64px;
+      padding-bottom: 32px;
+    }
+    .four {
+      height: 525px;
+      font-size: 1.6em;
+    }
+    .p {
+      padding-top: 9.6px;
+    }
+    .learn {
+      height: 76px;
+    }
+    .law1 {
+      font-size: .77em;
+    }
+    #law {
+      height: 64px;
+      font-size: 1em;
+    }
+    #footer,
+    #footer div {
+      height: 60px;
+      line-height: 60px;
+      font-size: .8em
+    }
+        #faq2{
+      font-size: 1.345em
+    }
+        form{
+      font-size: 1.15em;
+    }
+
+  }
+
+  /* Very Large PC */
+
+  @media screen and (min-width: 1600px) {
+    .caption {
+      font-size: .88em;
+    }
+    #navbar {
+      font-size: 1.14em;
+    }
+    #main {
+      font-size: 5em;
+      height: 1100px;
+      margin-top: 102px;
+    }
+    .info {
+      font-size: 1.7em;
+      height: 580px;
+    }
+    #navbar a {
+      height: 102px;
+    }
+    #navbar div {
+      height: 102px;
+    }
+    #law {
+      height: 68px;
+      font-size: 1.2em;
+    }
+    #miniNav div {
+      height: 68px;
+      padding-bottom: 34px;
+    }
+    .four {
+      height: 580px;
+      font-size: 1.7em;
+    }
+    .p {
+      padding-top: 10.2px;
+    }
+    .learn {
+      height: 80px;
+    }
+    .law1 {
+      font-size: .8em;
+    }
+    #footer,
+    #footer div {
+      height: 70px;
+      line-height: 70px;
+      font-size: .9em
+    }
+        #faq2{
+      font-size: 1.55em
+    }
+        form,textarea,.mit{
+      font-size:1.22em;
+    }
+    h2{
+      1.87em
+    }
+
+
+  }
+
+  /* 1080*/
+
+  @media screen and (min-width: 1920px) {
+    .caption {
+      font-size: 1em;
+    }
+    #law {
+      font-size: 1.45em;
+      height: 72px;
+    }
+    #navbar {
+      font-size: 1.33em;
+    }
+    #main {
+      font-size: 5.4em;
+      height: 1200px;
+      margin-top: 108px;
+    }
+    .info {
+      font-size: 1.8em;
+      height: 640px;
+    }
+
+    #navbar a {
+      height: 108px;
+    }
+    #navbar div {
+      height: 108px;
+    }
+    #miniNav div {
+      height: 72px;
+      padding-bottom: 36px;
+    }
+    .four {
+      height: 640px;
+      font-size: 1.8em;
+    }
+    .p {
+      padding-top: 10.8px;
+    }
+    .learn {
+      height: 83px;
+    }
+    .law1 {
+      font-size: 1em;
+    }
+    #footer,
+    #footer div {
+      height: 80px;
+      line-height: 80px;
+      font-size: 1em
+    }
+        #faq2{
+      font-size: 1.6em
+    }
+        form,textarea,.mit{
+      font-size: 1.3em;
+    }
+    h2{
+      font-size: 2.15em
+    }
+
+  }
+
+  /* 1440 (NOT TESTED) */
+
+  @media screen and (min-width: 2560px) {
+    .caption {
+      font-size: 1.2em;
+    }
+    #law {
+      font-size: 1.95em;
+      height: 76px;
+    }
+    #navbar {
+      font-size: 1.62em;
+    }
+    #main {
+      font-size: 5.77em;
+      height: 1350px;
+      margin-top: 115px;
+    }
+    .info {
+      font-size: 2.3em;
+      height: 725px;
+    }
+
+    #navbar a {
+      height: 115px;
+    }
+    #navbar div {
+      height: 115px;
+    }
+    #miniNav div {
+      height: 76px;
+      padding-bottom: 39px;
+    }
+    .four {
+      height: 925px;
+      font-size: 2.3em;
+    }
+    .p {
+      padding-top: 11.5px;
+    }
+    .learn {
+      height: 92px;
+    }
+    .law1 {
+      font-size: 1.2em;
+    }
+    #footer,
+    #footer div {
+      height: 90px;
+      line-height: 90px;
+      font-size: 1.3em
+    }
+        #faq2{
+      font-size: 1.85em
+    }
+        form,textarea,.mit{
+      font-size: 1.4em;
+    }
+    h2{
+      font-size: 2.5em
+    }
+
+  }
+
+  @media screen and (min-width: 3000px) {
+    .caption {
+      font-size: 1.4em;
+    }
+    #law {
+      font-size: 2.75em;
+      height: 86px;
+    }
+
+    #navbar {
+      font-size: 2em;
+    }
+    #main {
+      font-size: 6.3em;
+      height: 1800px;
+      margin-top: 127px;
+    }
+    .info {
+      font-size: 3em;
+      height: 925px;
+    }
+
+    #navbar a {
+      height: 127px;
+    }
+    #navbar div {
+      height: 127px;
+    }
+    #miniNav div {
+      height: 105px;
+      padding-bottom: 41px;
+    }
+    .four {
+      height: 1450px;
+      font-size: 3em;
+    }
+    .p {
+      padding-top: 12.7px;
+    }
+    .learn {
+      height: 101px;
+    }
+    .law1 {
+      font-size: 1.375em;
+    }
+    #footer,
+    #footer div {
+      height: 100px;
+      line-height: 100px;
+      font-size: 1.65em;
+    }
+        #faq2{
+      font-size: 2.3em
+    }
+        form,textarea,.mit{
+      font-size: 1.85em;
+    }
+    h2{
+      font-size: 3em;
+    }
+
+  }
+
+
+
+  body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #0594B4;
+    color: black;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+  a:visited {
+    text-decoration: none;
+    color: black;
+  }
+
+  a:active {
+    text-decoration: none;
+    color: black
+  }
+
+  #footer {
+    background-color: white;
+    color: black;
+    background: rgb(220, 220, 220);
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+
+  #footer div {
+    margin-left: 12%;
+
+  }
+
+  #footer #top {
+    margin-left: 60%;
+  }
+
+  /* Navigation Bar */
+
+  #navbar {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 25% 35% 10% 10% 10% 10%;
+    position: fixed;
+    top: 0;
+    left: 0%;
+    background-color: rgb(210, 210, 255);
+    z-index: 1;
+  }
+
+  /* Navigation Pages */
+
+  #navbar div {
+    background-color: rgb(210, 210, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .2s ease-in-out;
+    font-weight: bold;
+  }
+
+  #navbar a {
+    text-decoration: none;
+    color: black;
+  }
+
+  #navbar a div {
+    width: 100%;
+    height: 100%;
+  }
+
+  #navbar .hover:hover {
+    transform: scale(1.1);
+    color: rgb(59, 79, 229);
+    font-weight: bold;
+    background-color: rgb(240, 240, 240);
+  }
+
+  /* Main IMAGE */
+
+  #main {
+    width: 100%;
+    background-image: url({% static 'renz/contact.png' %});
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .2s ease-in-out;
+    font-family: 'Press Start 2P', cursive;
+    color: rgb(220, 220, 220);
+    text-shadow: -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+  }
+
+  /* Rest of Page */
+
+  #miniNav {
+    display: grid;
+    width: 100%;
+    background-color: rgb(70, 111, 200);
+
+  }
+
+  .four {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 33.333333333333% 33.333333333% 33.3333333333333%;
+  }
+
+  .zoom {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  #law {
+    width: 100%;
+    background-color: rgb(70, 111, 200);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+  }
+
+  #firstimg {
+    background-image: url({% static 'renz/law1.jpg' %});
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  #laws {
+
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+  }
+
+  #pro1 {
+    width: 100%;
+    height: 100%;
+    background-image: url({% static 'renz/teachgang.jpg' %});
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .2s ease-in-out;
+    color: black;
+    font-weight: bold;
+    transition: all .5s ease;
+  }
+
+  .law1 {
+    background-color: #0594B4;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .2s ease-in-out;
+    color: black;
+    font-weight: bold;
+  }
+
+  .law1 #half {
+    display: grid;
+    grid-template-rows: 50% 50%;
+  }
+
+  #half div {
+    margin-bottom: 8%;
+    margin-right: 2%;
+  }
+
+  #pro1:hover,
+  #pro2:hover,
+  #pro3:hover {
+    transform: scale(1.25);
+    color: blue;
+  }
+
+  #pro2 {
+    width: 100%;
+    height: 100%;
+    background-image: url({% static 'renz/medgang.jpg' %});
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .2s ease-in-out;
+    color: black;
+    font-weight: bold;
+    transition: all .5s ease;
+  }
+
+  #pro3 {
+    width: 100%;
+    height: 100%;
+    background-image: url({% static 'renz/homegang.jpg' %});
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .2s ease-in-out;
+    color: black;
+    font-weight: bold;
+    transition: all .5s ease;
+  }
+
+  .info {
+    width: 100%;
+    background-image: url({% static 'renz/index_main.jpg' %});
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .2s ease-in-out;
+    color: black;
+    font-weight: bold;
+
+  }
+
+  .p {
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 5%;
+    width: 35%;
+  }
+
+  .learn {
+    background-color: rgb(54, 158, 196);
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .2s ease-in-out;
+    margin-left: 40%;
+
+
+  }
+
+  .learn:hover {
+    color: white;
+  }
+
+  #miniNav a {
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+    background-color: rgb(70, 111, 200);
+  }
+
+  .mini {
+    padding-right: 10%;
+    color: black;
+  }
+
+  .mini img {
+    padding-top: 5%;
+    padding-bottom: 2%;
+    width: 33%;
+    height: 70%;
+  }
+
+  .mini:hover {
+    color: white;
+    font-weight: bold;
+    background-color: rgb(70, 111, 240);
+  }
+
+  .caption {
+    display: block;
+  }
+
+  /* Logo */
+
+  #logo {
+    width: 40%;
+    padding-right: 5%;
+    height: 100%;
+  }
+
+  /* Mobile Navigation */
+
+  #menuToggle {
+    position: fixed;
+    top: 2vh;
+    left: 61.5%;
+    width: 40%;
+    z-index: 1;
+
+    -webkit-user-select: none;
+    user-select: none;
+  }
+
+  /* Open Hamburger Menu */
+
+  #menuToggle input {
+    display: block;
+    width: 30%;
+    height: 30px;
+    position: absolute;
+    top: -.5vh;
+    left: 33%;
+
+    cursor: pointer;
+
+    opacity: 0;
+    /* hide */
+    z-index: 2;
+    /* place over hamburger */
+    -webkit-touch-callout: none;
+  }
+
+  /* Hamburger Image */
+
+  #menuToggle span {
+    margin-left: 41%;
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+
+    background: black;
+    border-radius: 3px;
+
+    z-index: 1;
+    transform-origin: 4px 0px;
+
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+    background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+    opacity 0.55s ease;
+  }
+
+  #menuToggle span:first-child {
+    transform-origin: 0% 0%;
+  }
+
+  #menuToggle span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+  }
+
+  /* Cross Hamburger Lines */
+
+  #menuToggle input:checked~span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: #232323;
+  }
+
+  /* Hide Middle Hamburger Line */
+
+  #menuToggle input:checked~span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+  }
+
+  /* Fiip Hamburher Line for X */
+
+  #menuToggle input:checked~span:nth-last-child(2) {
+    transform: rotate(-45deg) translate(0%, -1px);
+  }
+
+  /* Expanded Hamburger */
+
+  #menu {
+    position: absolute;
+    width: 100%;
+    margin: -100px 0% 100px -2%;
+    padding: px;
+    padding-top: 125px;
+
+    background: #ededed;
+    -webkit-font-smoothing: antialiased;
+    /* to stop flickering of text in safari */
+    transform-origin: 0% 0%;
+    transform: translate(100%, 0);
+
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+  }
+
+  #menu div {
+    padding: 10px 0;
+    font-size: .875em;
+    text-align: center;
+  }
+
+  #menu a {
+    color: rgb(71, 71, 71);
+    text-decoration: none;
+  }
+
+  /*Expand Menu Anuimation from Right Side of Screen */
+
+  #menuToggle input:checked~div {
+    transform: none;
+  }
+
+  #menu div:hover {
+    transform: scale(1.1);
+    color: rgb(59, 79, 229);
+    font-weight: bold;
+    background-color: rgb(240, 240, 240);
+
+  }
+     h2{
+        text-align: center;
+        color: black;
+        margin-top: 2%;
+        margin-bottom:1%;
+    }
+    form{
+        margin: 5% auto;
+        width: 50%;
+        color: steelblue;
+    }
+    input{
+        padding: 2%;
+        font-size: inherit;
+    }
+    input[type="text"]{
+        display:block;
+        margin-bottom:3%;
+        width:100%;
+        border: 2px solid steelblue;
+        background: #FAF6D9;
+         box-sizing: border-box;
+    }
+    input[type="email"]{
+        display:block;
+        margin-bottom:3%;
+        width:100%;
+        border: 2px solid steelblue;
+        background: #FAF6D9;
+         box-sizing: border-box;
+    }
+
+    input[type="submit"]{
+        width: 100%;
+        height: 10%;
+        border: none;
+        background: steelblue;
+        color: black;
+         box-sizing: border-box;
+    }
+    input[type="submit"]:hover{
+      color: white;
+    }
+    input:focus{
+        background: white;
+    }
+    textarea {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    width: 100%;
+}
+#faq2{
+  display:grid;
+  text-align:center;
+  border-bottom: 1px solid
+}
+#faq2 div{
+  margin-bottom: 4%;
+}
+h3{
+  margin-bottom: 1.3%;
+}
+
+.swer{
+  margin-left: 25%;
+  width: 50%;
+}
+  #se{
+    height: 100%;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }#se input{
+    width: 90%;
+    height: 50%;
+  font-size: .9em}
+    .mit:focus{
+    background: steelblue;
+  }
+</style>
+<script> 
+function foo() {
+   alert("Thank you for the feedback!");
+   return true;
+}
+</script>
+
+<body>
+
+
+
+  <div id="navbar">
+    <a href="http://dupontmanual.com" target="blank_">
+      <div class="hover logoText">
+        <img src={% static 'renz/manual.png' %} id="logo" alt "">RAM ROBOTICS</div>
+    </a>
+    <div><form id="se" method="get" action="{% url 'search' %}">
+      <input type="search" name="search" placeholder="Search Bar" value="{{request.GET.name}}">
+    </form>
+  </div>
+    <a class="big" href="home">
+      <div class="hover pc">HOME</div>
+    </a>
+    <a class="big" href="about">
+      <div class="hover pc">ABOUT US</div>
+    </a>
+    <a class="big" href="products">
+      <div class="hover pc">PRODUCTS</div>
+    </a>
+    <a class="big" href="contact">
+      <div class="hover pc">CONTACT</div>
+    </a>
+  </div>
+  <div id="menuToggle">
+    <input type="checkbox" />
+    <span></span>
+    <span></span>
+    <span></span>
+    <div id="menu">
+      <a href="home">
+        <div>HOME</div>
+      </a>
+      <a href="about">
+        <div>ABOUT US</div>
+      </a>
+      <a href="products">
+        <div>PRODUCTS</div>
+      </a>
+      <a href="contact">
+        <div>CONTACT</div>
+      </a>
+    </div>
+  </div>
+  <a name="topper"></a>
+  <div id="main">
+    CONTACT US
+  </div>
+  <a name="about"></a>
+  <div id="miniNav">
+    <div></div>
+    <a href="#about">
+      <div class="mini">
+        <img class="miniIcon" src={% static 'renz/question.png' %} alt="">
+        <span class="caption">FAQ</span>
+      </div>
+    </a>
+    <a href="#pro">
+      <div class="mini">
+        <img class="miniIcon" src={% static 'renz/mail-icon.png' %} alt="">
+        <span class="caption">CONTACT</span>
+      </div>
+    </a>
+    <div></div>
+
+  </div>
+  <h2>FAQs</h2>
+  <a name="about"></a>
+    <div id="faq2">
+    
+    <div>Q1: What if a robot becomes the Terminator? What if it injures me?</div>
+    <div class="an"><p class="swer">A1: Our robots are programmed to say no to orders that would break Asimov's 3 Laws of Robotics. If you are injured by a malfunction we are not held liable.</p></div>
+    <div>Q2: Why can't the robots do everything I want it to?</div>
+    <div class="an"><p class="swer">A2: We, currently don't have enough data nor compute power to have a single bot be able to do everything. As time goes on, it will become more capable than humans.</p></div>
+    <div>Q3: What will happen to my job?</div>
+    <div class="an"><p class="swer">A3: The goal is to eliminate laborous jobs, but if you need a job you can apply for one at our company by filling the form below.</p></div>
+    <div>Q4: Why are these robots so expensive? </div>
+    <div class="an"><p class="swer">A4: To train and create high-quality A.I, we need to use the best hardware, computer scientists, engineers, and others like doctors, which are expensive input costs.</p></div>
+    <div>Q5: How do the robots learn?</div>
+    <div ><p class="swer">A5: We use machine learning, which is a process where we set up a neural network, which is similar to a human's brain and the robot is trained by feeding it data. When the robot outputs an incorrect answer it will incremently fix its algorithm/learn from its mistakes, which is like a baby learning to walk. </p></div>
+  </div>
+
+</div>
+
+    <h2>SUPPORT</h2>
+    <a name="pro"></a>
+    <form onsubmit="return foo();">
+        <input type="text" placeholder="Firstname">
+        <input type="text" placeholder="Lastname">
+        <input type="email" placeholder="Email" required>
+         <textarea rows="4" cols="45"placeholder="Feedback" required></textarea> 
+
+        <input type="submit" class="mit" name="Submit">
+    </form>
+
+
+
+  <div id="footer">
+    <div>
+      <a href="tsa" target="_blank">Copyright &copy;-Rams Robotics TSA</a>
+    </div>
+    <div id="top">
+      <a href="#topper">Back to Top</a>
+    </div>
+  </div>
+
+</body>
+
+
+</html>
